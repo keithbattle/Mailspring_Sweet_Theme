@@ -47,50 +47,51 @@
     src: url('mailspring://custom-fonts/fonts/Custom-Normal.otf'), Helvetica, sans-serif;
     unicode-range: U+1f300-1f5ff, U+1f600-1f64f, U+1f680-1f6ff, U+2600-26ff;
   }
+
   
   body {
-  font-size: 15px;
-  color: #000;
-  filter: invert(100%) hue-rotate(180deg);
- }
-  
+    //Forces the text to be 15px, black and then invert the color, 
+    //changing all the text to white and images to negative.
+    font-size: 15px;
+    color: #000;
+    filter: invert(100%) hue-rotate(180deg);
+  }
+
   html,
   body {
+    //Aplies to the entire HTML.
     font-size: 15px;
     font-weight: bold;
     -webkit-text-size-adjust: auto;
     -webkit-nbsp-mode: space;
+    line-break: auto;
     -webkit-line-break: after-white-space;
   }
 
- img {
-  filter: invert(100%) hue-rotate(180deg);
+  img {
+    //Inverts the color of the images to their original.
+    filter: invert(100%) hue-rotate(180deg);
   }
-  
+
  #inbox-html-wrapper {
-    font-family: 'Nylas-Pro','Helvetica', 'Lucidia Grande', sans-serif;
+    font-family:  'Nylas-Pro','Helvetica', 'Lucidia Grande', sans-serif;
     font-size: 15px;
   }
 
   #inbox-html-wrapper.platform-win32 {
-    font-family: 'Nylas-Pro','Helvetica', 'Lucidia Grande', sans-serif;
+    font-family:  'Nylas-Pro','Helvetica', 'Lucidia Grande', sans-serif;
     font-size: 15px;
-    
   }
 
   #inbox-plain-wrapper {
-
     font-family: 'Nylas-Pro','Helvetica', 'Lucidia Grande', sans-serif;
     font-size: 15px;
     white-space: pre-line;
-    
   }
-  
+
   pre.nylas-plaintext {
-    // The default font for <pre> tags is the system monospace font. We want
-    // themes to be able to override with monospace, but not have that be the
-    // default for normal people.
-    font-family: 'Nylas-Pro','Helvetica', 'Lucidia Grande', sans-serif;
+    //Replace the font from the e-mail to have more clear reading.
+    font-family:  'Nylas-Pro','Helvetica', 'Lucidia Grande', sans-serif;
     white-space: pre-wrap;
     word-wrap: break-word;
     color: #eee;
