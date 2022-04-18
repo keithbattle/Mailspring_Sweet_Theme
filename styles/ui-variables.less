@@ -1,54 +1,69 @@
 @import 'base/ui-variables';
 
+@background-color: #181B28;
+@cyan-color: #3086ff;
+@purple-color: #6d147c;
+@yellow-color: #FCCD1A;
+@pink-color: #d110df;
+@foreground-color: #ffffff;
+@selection-color: #252A3F;
+@comment-color: #272933;
+@green-color: #45D6A3;
+
+
 @gray-base: #ffffff;
 @gray-darker: darken(@gray-base, 13.5%);
 @gray-dark: darken(@gray-base, 20%);
 @gray: darken(@gray-base, 33.5%);
 @gray-light: darken(@gray-base, 46.7%);
 @gray-lighter: darken(@gray-base, 92.5%);
-@white: #3b3a3a;
+@white: @background-color;
 
 //Change this value if you want to change the accent color
-@accent-primary: #1d9de7 ;
+@accent-primary: @pink-color ;
 @accent-primary-dark: darken(@accent-primary, 10%);
 
-@background-primary: #000000;
-@background-off-primary: #000000;
-@background-secondary: #000000;
-@background-tertiary: #6d7987;
+@background-primary: @background-color;
+@background-off-primary: @selection-color;
+@background-secondary: @background-color;
+@background-tertiary: @comment-color;
 
 @border-color-primary: lighten(@background-primary, 10%);
 @border-color-secondary: lighten(@background-secondary, 10%);
 @border-color-tertiary: lighten(@background-tertiary, 10%);
 @border-color-divider: @border-color-secondary;
 
-@text-color: #eee;
+@text-color: @foreground-color;
 @text-color-subtle: fadeout(@text-color, 20%);
 @text-color-very-subtle: fadeout(@text-color, 40%);
-@text-color-inverse: white;
+@text-color-inverse: @foreground-color;
 @text-color-inverse-subtle: fadeout(@text-color-inverse, 20%);
 @text-color-inverse-very-subtle: fadeout(@text-color-inverse, 50%);
-@text-color-heading: #fff;
+@text-color-heading: @foreground-color;
 
 @text-color-link: @accent-primary;
 @text-color-link-hover: @accent-primary-dark;
 @text-color-link-active: @accent-primary-dark;
 
 @btn-default-bg-color: lighten(@background-primary, 5%);
-@dropdown-default-bg-color: #404040;
+@dropdown-default-bg-color: @selection-color;
 
-@input-bg: #000000;
+@input-bg: @background-color;
 @input-border: @border-color-divider;
 
-@list-bg: #000;
-@list-border: #000000;
+@list-bg: @background-color;
+@list-border: @selection-color;
 @list-selected-color: @text-color-inverse;
 @list-focused-color: @text-color;
 
-@toolbar-background-color: #000000;
-@panel-background-color: #000;
+@toolbar-background-color: @background-color;
+@panel-background-color: @background-color;
 
-
+//== Account Sidebar
+@panel-background-color: @background-color;
+@source-list-bg: @panel-background-color;
+@source-list-active-bg: @panel-background-color;
+@source-list-active-color: @accent-primary;
 
 .sheet-toolbar {
   border-bottom: 1px solid @border-color-divider;
