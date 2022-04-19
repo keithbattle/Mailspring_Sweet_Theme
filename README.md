@@ -1,2 +1,2 @@
-# Pure-Dark
-Pure Dark Mailspring Theme Modified w/ Sweet Theme
+# Modified Pure-Dark/Sweet Theme
+Pure Dark Mailspring theme modified w/ Sweet Theme to remedy message readability issues.
